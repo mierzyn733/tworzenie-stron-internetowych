@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.list-container {
+  background-color: yellow;
+  margin: 60px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  margin-top: 20px;
+  color: black;
+}
+
+.sub-item {
+  list-style-type: none; 
+  padding-left: 20px;
+}
+
+.sub-item-link {
+  text-decoration: none; 
+  color: blue;
+}
+
+.sub-item-link:hover {
+  color: red;
+  text-decoration: line-through; 
+}
+
+.sub-item-link:visited {
+  color: purple; 
+}
+
+.sub-item-link:focus {
+  outline: 3px solid red;
+}
+
+.sub-item-link:active {
+  color: green; 
+}

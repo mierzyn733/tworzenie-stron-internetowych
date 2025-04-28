@@ -1,0 +1,75 @@
+:root {
+    --color0: #f0f0f0;
+    --color1: #cce5ff;
+    --color2: #99ccff;
+    --color3: #66b3ff;
+    --color4: #3399ff;
+    --color5: #007acc;
+
+    --solid-border: 2px solid black;
+    --dashed-border: 2px dashed gray;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Ustawienia tła na podstawie dostępności */
+.available-0 {
+    background-color: var(--color0);
+}
+.available-1 {
+    background-color: var(--color1);
+}
+.available-2 {
+    background-color: var(--color2);
+}
+.available-3 {
+    background-color: var(--color3);
+}
+.available-4 {
+    background-color: var(--color4);
+}
+.available-5 {
+    background-color: var(--color5);
+}
+
+/* Solidne obramowanie dla .sharp */
+.sharp td {
+    border-bottom: var(--solid-border);
+}
+
+/* Przerywane obramowanie dla .half */
+.half td {
+    border-bottom: var(--dashed-border);
+}
+
+/* Stylizacja legendy */
+#legend {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#legend-gradient {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    background-image: linear-gradient(
+        to right,
+        var(--color0) 0%, var(--color0) 16.66%,
+        var(--color1) 16.66%, var(--color1) 33.32%,
+        var(--color2) 33.32%, var(--color2) 49.98%,
+        var(--color3) 49.98%, var(--color3) 66.64%,
+        var(--color4) 66.64%, var(--color4) 83.3%,
+        var(--color5) 83.3%, var(--color5) 100%
+    );
+}

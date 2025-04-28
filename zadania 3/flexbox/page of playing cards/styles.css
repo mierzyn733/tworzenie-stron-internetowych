@@ -1,0 +1,45 @@
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #333;
+  border-radius: 15px; /* zaokrąglone rogi */
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* lekki cień */
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  position: relative;
+}
+
+.left {
+  align-self: flex-start;
+  
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px; /* większy środek */
+}
+
+.right {
+  align-self: flex-end;
+}
+
+/* Kolory dla figur czerwonych */
+.card .middle, .card .left, .card .right {
+  color: black; /* domyślny kolor */
+}
+
+

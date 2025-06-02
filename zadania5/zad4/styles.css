@@ -1,0 +1,96 @@
+/* Styl dla markerów */
+.custom-marker {
+    background-color: #ff5252;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+/* Styl hover dla markerów */
+.custom-marker:hover {
+    transform: scale(1.5);
+    background-color: #ff3388;
+    box-shadow: 0 0 15px rgba(255, 51, 136, 0.8);
+    z-index: 1000;
+}
+
+/* Styl dla popupów */
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.leaflet-popup-content {
+    margin: 15px;
+    min-width: 220px;
+}
+
+.leaflet-popup-content-wrapper:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-button {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 12px 0;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    font-size: 16px;
+}
+
+.popup-button:hover {
+    background: linear-gradient(to bottom, #2980b9, #2573a7);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Styl dla obszaru */
+.polygon-area {
+    fillColor: #27ae60;
+    color: #27ae60;
+    weight: 4;
+    opacity: 0.8;
+    fillOpacity: 0.4;
+    transition: all 0.4s ease;
+}
+
+/* Styl hover dla obszaru */
+.polygon-area:hover {
+    fillColor: #e74c3c;
+    color: #e74c3c;
+    fillOpacity: 0.7;
+    weight: 6;
+    filter: drop-shadow(0 0 8px rgba(231, 76, 60, 0.7));
+}
+
+/* Styl dla tymczasowego markera */
+.temp-marker {
+    background-color: #9b59b6;
+    border: 2px dashed white;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}

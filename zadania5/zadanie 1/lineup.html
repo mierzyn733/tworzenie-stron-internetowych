@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line-up | Summer Vibes Festival</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Summer Vibes</div>
+        <nav class="mobile-nav">
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="zadanie1.html">Strona główna</a></li>
+                <li><a href="lineup.html">Line-up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="lineup">
+            <h1>Line-up 2024</h1>
+            
+            <div class="artist-day">
+                <h2>15 sierpnia</h2>
+                <div class="artist-grid">
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/200" alt="The Sound Waves">
+                        <h3>The Sound Waves</h3>
+                        <p>20:00 - Scena Główna</p>
+                    </div>
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/200" alt="Electro Pulse">
+                        <h3>Electro Pulse</h3>
+                        <p>22:00 - Scena Główna</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artist-day">
+                <h2>16 sierpnia</h2>
+                <div class="artist-grid">
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/200" alt="Urban Beats">
+                        <h3>Urban Beats</h3>
+                        <p>19:00 - Scena Alternatywna</p>
+                    </div>
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/200" alt="Jazz Collective">
+                        <h3>Jazz Collective</h3>
+                        <p>21:00 - Scena Jazzowa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artist-day">
+                <h2>17 sierpnia</h2>
+                <div class="artist-grid">
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/200" alt="Star DJ">
+                        <h3>Star DJ</h3>
+                        <p>22:00 - Scena Główna</p>
+                    </div>
+                    <div class="artist-card">
+                        <img src="https://via.placeholder.com/200" alt="Indie Vibes">
+                        <h3>Indie Vibes</h3>
+                        <p>18:00 - Scena Alternatywna</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Regulamin</a>
+            <a href="#">Polityka prywatności</a>
+            <a href="#">FAQ</a>
+        </div>
+        <p>&copy; 2024 Summer Vibes Festival. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

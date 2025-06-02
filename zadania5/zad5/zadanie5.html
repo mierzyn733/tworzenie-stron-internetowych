@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Poznania - Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mapa Poznania z Leaflet</h1>
+    
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Dodaj nowy marker</h2>
+            <div class="color-preview" id="colorPreview" style="background-color: #ff5252;"></div>
+        </div>
+        
+        <div class="instructions">
+            <p><strong>Instrukcja:</strong> Wprowadź współrzędne markera (np. 52.4064, 16.9252), tytuł i opis. Możesz także ustawić kolor markera i dodać przycisk z własnym tekstem.</p>
+        </div>
+        
+        <form id="markerForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="latitude">Szerokość geograficzna</label>
+                    <input type="text" id="latitude" placeholder="np. 52.4064">
+                    <div class="error" id="latitudeError">Nieprawidłowa wartość (zakres: -90 do 90)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="longitude">Długość geograficzna</label>
+                    <input type="text" id="longitude" placeholder="np. 16.9252">
+                    <div class="error" id="longitudeError">Nieprawidłowa wartość (zakres: -180 do 180)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="markerColor">Kolor markera</label>
+                    <input type="color" id="markerColor" value="#ff5252">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="title">Tytuł markera *</label>
+                    <input type="text" id="title" placeholder="Nazwa miejsca" required>
+                    <div class="error" id="titleError">Tytuł jest wymagany</div>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="description">Opis</label>
+                    <textarea id="description" placeholder="Krótki opis miejsca..."></textarea>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="buttonText">Tekst na przycisku</label>
+                    <input type="text" id="buttonText" placeholder="np. 'Zobacz więcej'">
+                </div>
+                
+                <div class="form-group">
+                    <label for="buttonAlert">Alert po kliknięciu</label>
+                    <input type="text" id="buttonAlert" placeholder="Komunikat alertu">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <button type="submit">Dodaj marker do mapy</button>
+                <button type="button" id="clearForm">Wyczyść formularz</button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="map"></div>
+    <div class="coordinates-info">Kliknij na mapę, aby skopiować współrzędne</div>
+    
+    <div class="markers-list">
+        <h2>Dodane markery</h2>
+        <ul id="markersList"></ul>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

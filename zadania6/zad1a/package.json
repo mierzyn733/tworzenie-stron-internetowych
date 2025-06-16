@@ -1,0 +1,10 @@
+{
+  "name": "colorful-numbers",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
